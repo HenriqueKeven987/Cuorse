@@ -20,7 +20,6 @@ public class vectors {
 			
 			System.out.println("Digite a Altura "+ i); 
 			alturas[i] = entrada.nextDouble();
-			
 		}
 		
 		
