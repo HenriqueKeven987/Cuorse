@@ -15,6 +15,7 @@ public class programExec {
 		System.out.print("Quantos Quartos a Seram Alugados: ");
 		int quartos = entrada.nextInt();
 		Estudante[] estudantes = new Estudante[10];
+			
 		
 		for(int i =0;i< quartos;i++) {
 			
