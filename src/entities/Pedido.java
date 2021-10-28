@@ -44,7 +44,9 @@ public class Pedido {
 		this.status = status;
 	}
 	
-	
+	public String toString() {
+		return "Dados \n id:" + id + "\n Data: "+ momento + "\n Status: "+ status;
+	}
 	
 	
 	
