@@ -16,11 +16,12 @@ public class EnumsApplication {
 		
 		Pedido pedido = new Pedido(108, data, status);
 		
-		
 		System.out.println(pedido);
 		StatusPedido statusEntrege = StatusPedido.valueOf("ENTREGE");
 		System.out.println(statusEntrege);
-
+		System.out.println(status);
+		
+		
 	}
 
 }
