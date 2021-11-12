@@ -3,7 +3,7 @@ package Application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Departamento;
+import entities.Trabalhador;
 
 public class ProgramTrabalhador {
 
@@ -11,9 +11,10 @@ public class ProgramTrabalhador {
 		
 		Locale.setDefault(Locale.US);
 		Scanner entrada = new Scanner(System.in);
+		Trabalhador worker = new Trabalhador();
 		
-		System.out.print("Digite o Departamento do Coolaborador: ");
-		Departamento dep = new Departamento(entrada.next());
+		System.out.println("Digite o Departamento do Coolaborador: ");
+		
 		
 		
 		
