@@ -11,8 +11,7 @@ public class ProgramTrabalhador {
 		
 		Locale.setDefault(Locale.US);
 		Scanner entrada = new Scanner(System.in);
-		Trabalhador worker = new Trabalhador();
-		
+
 		System.out.println("Digite o Departamento do Coolaborador: ");
 		
 		
