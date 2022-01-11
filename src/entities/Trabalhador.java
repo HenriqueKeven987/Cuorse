@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import entities.enums.NivelTrabalho;
@@ -11,19 +12,17 @@ public class Trabalhador {
 	private Double salarioBase;
 	
 	private Departamento departamento;
-	private List<ContratoHora> Contratos;
+	private List<Contrato> Contratos = new ArrayList<>();
 	
 	public Trabalhador() {
 		
 	}
 	
-	public Trabalhador(String nome, NivelTrabalho nivel, Double salarioBase, Departamento departamento,
-			List<ContratoHora> contratos) {
+	public Trabalhador(String nome, NivelTrabalho nivel, Double salarioBase, Departamento departamento) {
 		this.nome = nome;
 		this.nivel = nivel;
 		this.salarioBase = salarioBase;
 		this.departamento = departamento;
-		Contratos = contratos;
 	}
 
 	public String getNome() {
@@ -58,17 +57,19 @@ public class Trabalhador {
 		this.departamento = departamento;
 	}
 
-	public List<ContratoHora> getContratos() {
+	public List<Contrato> getContratos() {
 		return Contratos;
 	}
 
-	public void setContratos(List<ContratoHora> contratos) {
-		Contratos = contratos;
+	public void setContratos(List<Contrato> Contratos) {
+		this.Contratos = Contratos; 
 	}
 	
+	public void addContrato(Contrato contrato) {
+		 Contratos.add(contrato);
+	}
 	
-	
-	
+	public void removeContrato
 	
 	
 	
